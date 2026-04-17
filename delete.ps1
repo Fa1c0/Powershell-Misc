@@ -1,8 +1,8 @@
 # Path to the text file containing patterns to match
-$namesFile = "Strings.txt"
+$namesFile = "Strings.txt" # You need to change this to the pattern you want to match.
 
 # Root folder to search
-$rootPath = "C:\INSERT\DRIVE\LOCATION\HERE"
+$rootPath = "C:\INSERT\DRIVE\LOCATION\HERE" # You need to change this to the drive letter.
 
 # CSV log file with timestamp
 $logFile = "deletions_{0:yyyy-MM-dd_HH-mm-ss}.csv" -f (Get-Date)
